@@ -1,5 +1,7 @@
 const router = require("express").Router();
-const recipeRoutes = require("./recipes");
+const recipeRoutes = require("./recipe.js");
 
 // direct router to recipe routes file
-route.use("/recipe".recipeRoutes);
+router.use("/recipes", recipeRoutes);
+
+module.exports = router;
